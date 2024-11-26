@@ -1,5 +1,5 @@
 ---
-Title: Home
+Title: HOME
 Description: Homepage.
 ---
 

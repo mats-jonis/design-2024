@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $body-background-color;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+
+.main {
+  width: 100%;
+  max-width: 70%;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: $background-color;
+    
+  p {
+    /* overflow: hidden; */
+    max-width: 75ch;
+    word-wrap: break-word;
+  }
+    
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    max-width: 90%;
+    background-color: $background-color;
+        
+  }
+}
