@@ -1,15 +1,14 @@
 ---
-Title: HOME
+Title: Hem
 Description: Homepage.
 ---
 
-Om mig
-==========================
+## Om mig
 
 Jag heter Mats och läser på programmet Webbprogrammering 120 hp.
 
 
-## Lite kort fakta om mig:
+## Lite kort fakta:
 
 Är uppvuxen i Norrland men bor nu i Stockholm.
 

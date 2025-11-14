@@ -6432,6 +6432,11 @@ body {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.4em;
+  margin-bottom: 1.96rem;
+}
+
 html,
 body {
   height: 100%;
@@ -6520,7 +6525,7 @@ a {
     flex-direction: column;
   }
   .title {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .logo img {
     width: 70%;
@@ -6612,3 +6617,27 @@ pre code {
   overflow-x: auto;
   line-height: 1.4;
 }
+
+.box {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  border: 1.5px solid red;
+}
+
+.footer {
+  display: none;
+}
+
+.box {
+  grid-column: span 2;
+}
+
+/* .css {
+    order: 1.5px solid purple;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+} */

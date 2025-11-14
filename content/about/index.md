@@ -1,10 +1,10 @@
 ---
-Title: OM
+Title: Om
 Description: Documentation that came with Pico.
 # hidden: true
 ---
 
-## OM
+## Om
 
 Jag använder Pico CMS för att hantera Markdown-filer och omvandla dem till HTML-sidor. Mallarna skapas med hjälp av Twig.
 
