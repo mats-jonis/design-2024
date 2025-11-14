@@ -16,8 +16,7 @@ utils = {};
  *
  * @return {bool} TRUE when the browser supports sliding, FALSE otherwise
  */
-utils.canSlide = function ()
-{
+utils.canSlide = function () {
     return (Modernizr.classlist && Modernizr.requestanimationframe && Modernizr.csstransitions);
 };
 
@@ -29,18 +28,18 @@ utils.canSlide = function ()
  *     been finished (i.e. the element is hidden)
  * @param {function}    startCallback  function to call when the animation starts
  */
-utils.slideUp = function (element, finishCallback, startCallback)
-{
+utils.slideUp = function (element, finishCallback, startCallback) {
     if (!utils.canSlide()) {
-        if (startCallback) startCallback();
+        if (startCallback) {startCallback();}
         element.className += (element.className !== '') ? ' hidden' : 'hidden';
-        if (finishCallback) window.setTimeout(finishCallback, 16);
+        if (finishCallback) {window.setTimeout(finishCallback, 16);}
         return;
     }
 
     element.style.height = element.clientHeight + 'px';
 
     var slideId = parseInt(element.getAttribute('data-slide-id')) || 0;
+
     element.setAttribute('data-slide-id', ++slideId);
 
     window.requestAnimationFrame(function () {
@@ -54,7 +53,7 @@ utils.slideUp = function (element, finishCallback, startCallback)
             }
 
             window.setTimeout(function () {
-                if (parseInt(element.getAttribute('data-slide-id')) !== slideId) return;
+                if (parseInt(element.getAttribute('data-slide-id')) !== slideId) {return;}
 
                 element.classList.add('hidden');
                 element.classList.remove('slide');
@@ -76,12 +75,11 @@ utils.slideUp = function (element, finishCallback, startCallback)
  *     been finished (i.e. the element is visible)
  * @param {function}    startCallback  function to call when the animation starts
  */
-utils.slideDown = function (element, finishCallback, startCallback)
-{
+utils.slideDown = function (element, finishCallback, startCallback) {
     if (!utils.canSlide()) {
-        if (startCallback) startCallback();
+        if (startCallback) {startCallback();}
         element.className = element.className.replace(/\bhidden\b */g, '');
-        if (finishCallback) window.setTimeout(finishCallback, 16);
+        if (finishCallback) {window.setTimeout(finishCallback, 16);}
         return;
     }
 
@@ -108,7 +106,7 @@ utils.slideDown = function (element, finishCallback, startCallback)
             }
 
             window.setTimeout(function () {
-                if (parseInt(element.getAttribute('data-slide-id')) !== slideId) return;
+                if (parseInt(element.getAttribute('data-slide-id')) !== slideId) {return;}
 
                 element.classList.remove('slide');
                 element.style.height = null;
@@ -128,7 +126,6 @@ utils.slideDown = function (element, finishCallback, startCallback)
  *
  * @return {bool} TRUE when the element is visible, FALSE otherwise
  */
-utils.isElementVisible = function (element)
-{
+utils.isElementVisible = function (element) {
     return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
 };

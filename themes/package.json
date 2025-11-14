@@ -7,6 +7,7 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
+    "lint:fix": "stylelint \"**/*.scss\" --fix",
     "style": "sass kmom03/scss/style.scss kmom03/css/style.css --no-source-map",
     "style-min": "sass kmom03/scss/style.scss kmom03/css/style.min.css --no-source-map --style compressed"
   },
