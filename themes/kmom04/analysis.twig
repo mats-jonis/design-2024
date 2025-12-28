@@ -8,7 +8,7 @@
             {{ content }}
                         
             {% for report in meta.Reports %}
-                <div class="box {{ report.class }}">
+                <div class="box {{ report.class }} analysis-full">
                     <a href="{{ base_url }}/analysis/{{ report.class }}">
                         <h2>{{ report.name }}</h2>
                     </a>
