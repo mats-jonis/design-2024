@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Resize and crop images on the fly, store generated images in a cache.
  *

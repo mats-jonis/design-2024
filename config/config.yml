@@ -11,7 +11,7 @@ timezone: ~                         # Your PHP installation might require you to
 ##
 # Theme
 #
-theme: kmom04                   # The name of your custom theme
+theme: kmom05                   # The name of your custom theme
 themes_url: ~                       # Pico will try to guess the URL to the themes dir of your installation;
                                     #     If this fails, override it here. Example: https://example.com/pico/themes/
 theme_config:                       # Additional theme-specific config
@@ -42,7 +42,7 @@ content_config:                     # Parsedown Markdown parser config
     escape: false                   # Escape HTML markup in your content files; don't confuse this with some sort of
                                     #     safe mode, enabling this doesn't allow you to process untrusted user input!
     auto_urls: true                 # Automatically link URLs found in your markup
-assets_dir: assets/                 # The path to Pico's assets directory
+assets_dir: assets/              # The path to Pico's assets directory
 assets_url: ~                       # Pico will try to guess the URL to the assets dir of your installation;
                                     #     If this fails, override it here. Example: https://example.com/pico/assets/
 
