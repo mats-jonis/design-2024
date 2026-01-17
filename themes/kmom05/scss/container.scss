@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  background-color: $body-background-color; //$main-background-color; //$body-background-color;
+  grid-template-columns: [first] 15% [second] 1fr [third] 15% [end];
+  grid-template-rows: [row1-start] 25% [row2-start] auto [row3-start] auto [row-end];
+
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.main {
+  grid-column: second / second;
+  grid-row: row2-start / row3-start;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: $main-background-color;
+  //display: none;
+
+  a {
+    color: #06c;
+    text-decoration: underline;
+    text-underline-offset: 2px; 
+  }
+
+  p {
+    /* overflow: hidden; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 75ch;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    grid-template-columns: [first] 0% [second] 1fr [third] 0% [end];
+    grid-template-rows: [row1-start] 15% [row2-start] auto [row3-start] auto [row-end];
+  }
+
+  .main {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $background-color;
+    width: calc(100vw - 1rem);
+    max-width: calc(100vw - 1rem);
+    box-sizing: border-box;
+
+    p {
+      max-width: 30ch;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+}

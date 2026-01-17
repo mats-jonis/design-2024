@@ -1,0 +1,33 @@
+@use 'variables' as * with (
+  $font-color: #e8e8e8,
+  $font-alternative-color: #b5bac1,
+  $accent-color: #3d6aff,
+  $background-color: #0f1115,
+  $background-alternative-color: #1b1e24,
+  $body-background-color: #0f1115,
+  $footer-background: #0c0e11,
+  $footer-text-color: #e8e8e8,
+  $code-background: #1e1f22,
+  $code-border: #2c2d30,
+  $code-text: #e6e6e6,
+  $inline-code-background: #2a2b2f,
+  $main-background-color: #0f1115,
+  $main-font-color: #e8e8e8,
+);
+
+@use '../../node_modules/normalize.css/normalize';
+@use 'variables-dark';
+@use 'typography';
+@use 'container';
+@use 'header';
+@use 'footer';
+@use 'blockquotes';
+@use 'code';
+@use 'technology';
+@use "gallery";
+
+$fa-font-path: "../../shared/fontawesome/webfonts";
+@import "../../shared/fontawesome/scss/fontawesome";
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
