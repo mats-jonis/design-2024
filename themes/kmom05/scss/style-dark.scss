@@ -24,10 +24,10 @@
 @use 'blockquotes';
 @use 'code';
 @use 'technology';
-@use "gallery";
+@use 'gallery';
 
-$fa-font-path: "../../shared/fontawesome/webfonts";
-@import "../../shared/fontawesome/scss/fontawesome";
-@import "../../shared/fontawesome/scss/brands";
-@import "../../shared/fontawesome/scss/solid";
-@import "../../shared/fontawesome/scss/regular";
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/fontawesome';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';

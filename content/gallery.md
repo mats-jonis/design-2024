@@ -1,17 +1,32 @@
 ---
 Title: Galleri
 Description: This is our gallery page.
+Template: gallery
+Images:
+    - file: antiloper-hjord.jpg
+      alt: Antiloper i hjord
+    - file: antiloper-hjord2.jpg
+      alt: Antiloper i hjord bild 2
+    - file: babianer-i-trad.jpg
+      alt: Babianer i träd
+    - file: babian-med-unge.jpg
+      alt: Babian med unge
+    - file: buffel-lerbad.jpg
+      alt: Buffel i lerbad
+    - file: flamingos-i-vatten.jpg
+      alt: Flamingos i vatten
+    - file: hager-savann.jpg
+      alt: Häger på savann
+    - file: havsorn-i-trad.jpg
+      alt: Havsörn i träd
+    - file: lejon-i-trad-narbild.jpg
+      alt: Lejon i träd (närbild)
+    - file: noshorning-profil.jpg
+      alt: Noshörning i profil
+    - file: vildsvin-vartsvin.jpg
+      alt: Vårtsvin
+    - file: giraff.jpg
+      alt: Giraff
 ---
 
-Mats galleri
-==============
-
-Här lägger vi till en bild om en stund.
-
-<picture>
-    <source media="(min-width: 668px)" srcset="image/xmas-tree.jpg?w=960&q=50">
-    <source media="(min-width: 376px)" srcset="image/xmas-tree.jpg?w=667&q=50">
-    <img src="image/xmas-tree.jpg?w=375&h=500&crop-to-fit&arean=0,0,0,35&q=50" alt="julgran">
-</picture>
-
-<!-- <img src="image/img.php?src=../img/xmas-tree.jpg&w=960&q=60" alt="julgran" /> -->
+# Mats galleri

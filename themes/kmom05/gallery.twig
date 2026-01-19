@@ -1,0 +1,39 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="landingpage">
+            {{ content }}
+        </div>
+            <div class="gallery">
+                {% for img in meta.Images %}
+                    <a href="{{ base_url }}/image/galleri/{{ img.file }}">
+                    <img
+                        src="{{ base_url }}/image/galleri/{{ img.file }}?w=400&h=400&crop-to-fit&q=70"
+                        srcset="
+                            {{ base_url }}/image/galleri/{{ img.file }}?w=400&h=400&crop-to-fit&q=70 400w,
+                            {{ base_url }}/image/galleri/{{ img.file }}?w=800&h=800&crop-to-fit&q=70 800w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        alt="{{ img.alt|e }}"
+                        loading="lazy"
+                    >
+                    </a>
+                {% endfor %}
+            </div>
+
+            <div class="embed-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/gHIs0Mdow8M"
+                        title="Youtube video"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+            </div>
+        </div>
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
