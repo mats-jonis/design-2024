@@ -26,11 +26,13 @@ Urvalet baserades på jämförbara webbplatser med liknande innehåll men från 
 ---
 
 **[PageSpeed Insights]** [1]
+
 - Mäter Performance Score för både mobil och desktop.
 - Core Web Vital: LCP, INP och CLS [2]
 
 **Firefox Devtools - Network** [3]
-- Mäter laddningstid (load-värdet) 
+
+- Mäter laddningstid (load-värdet)
 - Antal resurser/requests
 - Total sidstorlek (MB)
 - Varje sida mättes 3 gånger och medelvärdet beräknades
@@ -44,13 +46,14 @@ För varje webbplats testades tre olika sidor: startsida, nyhetssida och utrustn
 ## Golf Digest
 
 <figure style="margin: 0; display: inline-block; max-width:100%;">
-    <img src="../assets/img/golfdigest.PNG" alt="Golf digest webbplats" width="700">
+    <img src="../image/golfdigest.png?w=700&q=70" alt="Golf digest webbplats">
     <figcaption style="text-align: center; font-style: italic;">
     Figur 1: Golf Digest webbplats
     </figcaption>
 </figure>
 
 **Testade sidor:**
+
 - [Startsida](https://www.golfdigest.com/)
 - [News](https://www.golfdigest.com/news)
 - [Equipment](https://www.golfdigest.com/equipment)
@@ -58,13 +61,14 @@ För varje webbplats testades tre olika sidor: startsida, nyhetssida och utrustn
 ## Golf
 
 <figure style="margin: 0; display: inline-block; max-width:100%;">
-    <img src="../assets/img/golf.PNG" alt="Golf.com webbplats" width="700">
+    <img src="../image/golf.png?w=700&q=70" alt="Golf.com webbplats">
     <figcaption style="text-align: center; font-style: italic;">
     Figur 2: Golf.com webbplats
     </figcaption>
 </figure>
 
 **Testade sidor:**
+
 - [Startsida](https://golf.com/)
 - [News](https://golf.com/news/)
 - [Equipment](https://golf.com/gear/)
@@ -72,13 +76,14 @@ För varje webbplats testades tre olika sidor: startsida, nyhetssida och utrustn
 ## Svensk Golf
 
 <figure style="margin: 0; display: inline-block; max-width:100%;">
-    <img src="../assets/img/svenskgolf.PNG" alt="Svensk Golf webbplats" width="700">
+    <img src="../image/svenskgolf.png?w=700&q=70" alt="Svensk Golf webbplats" width="700">
     <figcaption style="text-align: center; font-style: italic;">
     Figur 3: Svensk Golf webbplats
     </figcaption>
 </figure>
 
 **Testade sidor:**
+
 - [Startsida](https://www.svenskgolf.se/)
 - [News](https://www.svenskgolf.se/kategori/tournytt/)
 - [Equipment](https://www.svenskgolf.se/kategori/utrustning/)
@@ -94,7 +99,7 @@ Core Web vitals (LCP, INP, CLS):
 
 (INP) Interaction to Next Paint
 
-(CLS) Cumulative Layout Shift 
+(CLS) Cumulative Layout Shift
 
 (PS) Performance Score
 
@@ -126,7 +131,6 @@ Third parts scripts som t.ex. annonser.
 
 Saknar lazy-loading för bilder
 
-
 ### Golf.com
 
 Identifierande problem:
@@ -144,7 +148,6 @@ Tung startsidan är 12 MB.
 Många annonser
 
 Saknar lazy-loading för bilder
-
 
 ### Svensk Golf
 
@@ -164,11 +167,9 @@ Saknar caching eller effektiv CDN
 
 Hade färre request (151) men storleken är mycket större vilket tyder på att varje fil är stor.
 
-
 ### Förbättringsåtgärder
 
 Baserat på analysen finns det tre huvudsakliga förbättringsområden som är gemensamma för alla tre webbplatser:
-
 
 **1. Bildoptimering**
 
@@ -195,6 +196,7 @@ Optimera server-responstider
 Baserat på mätvärderna rangordnas webbplatserna enligt följande:
 
 ### 1:a plats: Svensk Golf
+
 **Mobile Performance Score:** 52-55
 
 **Desktop Performance Score:** 62-93
@@ -206,6 +208,7 @@ Baserat på mätvärderna rangordnas webbplatserna enligt följande:
 Tar förstaplatsen tack vare genomgående bra Performance Scores, särskilt på desktop där webbplatsen når upp till 93 poäng.
 
 ### 2:a plats: Golf Digest
+
 **Mobile Performance Score:** 42-55
 
 **Desktop Performance Score:** 51-66
@@ -218,6 +221,7 @@ Golf Digest tar andraplatsen med stabila resultat.
 Webbplatsen har en bra prestanda och klart snabbast laddingstid (3-5.5s).
 
 ### 3:e plats: Golf
+
 **Mobile Performance Score:** 28-33
 
 **Desktop Performance Score:** 60-62
