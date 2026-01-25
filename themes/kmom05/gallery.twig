@@ -9,17 +9,12 @@
         </div>
             <div class="gallery">
                 {% for img in meta.Images %}
-                    <a href="{{ base_url }}/image/galleri/{{ img.file }}">
-                    <img
-                        src="{{ base_url }}/image/galleri/{{ img.file }}?w=400&h=400&crop-to-fit&q=70"
-                        srcset="
-                            {{ base_url }}/image/galleri/{{ img.file }}?w=400&h=400&crop-to-fit&q=70 400w,
-                            {{ base_url }}/image/galleri/{{ img.file }}?w=800&h=800&crop-to-fit&q=70 800w
-                        "
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        alt="{{ img.alt|e }}"
-                        loading="lazy"
-                    >
+                    <a href="image/gallery/{{ img.file }}">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="image/gallery/{{ img.file }}?w=400&h=400&crop-to-fit&q=70">
+                        <source media="(min-width: 376px)" srcset="image/gallery/{{ img.file }}?w=600&h=600&crop-to-fit&q=70">
+                        <img src="image/gallery/{{ img.file }}?w=375&h=375&crop-to-fit&q=70" alt="{{ img.alt|e }}">
+                    </picture>
                     </a>
                 {% endfor %}
             </div>
@@ -32,7 +27,6 @@
                         allowfullscreen>
                     </iframe>
             </div>
-        </div>
     {% include 'incl/footer.twig' %}
 </body>
 
