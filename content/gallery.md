@@ -21,12 +21,6 @@ Images:
     alt: Havsörn i träd
   - file: lejon-i-trad-narbild.jpg
     alt: Lejon i träd (närbild)
-  - file: noshorning-profil.jpg
-    alt: Noshörning i profil
-  - file: vildsvin-vartsvin.jpg
-    alt: Vårtsvin
-  - file: giraff.jpg
-    alt: Giraff
 ---
 
 # Mats galleri

@@ -25,7 +25,7 @@ Urvalet baserades på jämförbara webbplatser med liknande innehåll men från 
 
 ---
 
-**[PageSpeed Insights]** [1]
+**PageSpeed Insights** [1]
 
 - Mäter Performance Score för både mobil och desktop.
 - Core Web Vital: LCP, INP och CLS [2]
