@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 .header {
   display: grid;
@@ -110,7 +110,7 @@ a {
 
   .logo img {
     width: 50%;
-    margin-top: 0rem;
+    margin-top: 0;
   }
 
   .title h1 {
@@ -139,7 +139,7 @@ a {
     max-width: calc(100vw - 20px);
     box-shadow: $nav-mobile-shadow;
     border-left: $nav-mobile-border;
-    border-bottom: none;
+    border-bottom: 0;
     transform: translateX(100%);
     transition: 0.3s ease;
     opacity: 0;

@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 .footer {
   grid-column: first / end;
@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: [first] auto [second] auto [third] auto [end];
   grid-template-rows: [row1-start] auto [row-end];
-  padding: 1rem 1rem;
+  padding: 1rem;
   background-color: $footer-background;
   color: $footer-text-color;
   align-items: center;

@@ -1,9 +1,9 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 body {
   line-height: 1.4;
   color: $main-font-color;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
   text-decoration: none;
   overflow-y: scroll;
@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
@@ -25,6 +25,6 @@ p {
 }
 
 .main p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
 }
