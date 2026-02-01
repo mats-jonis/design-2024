@@ -8,10 +8,11 @@ body {
 body {
   display: grid;
   background-color: $body-background-color;
-  grid-template-columns: [first] 15% [second] 1fr [third] 15% [end];
-  grid-template-rows: [row1-start] 25% [row2-start] auto [row3-start] auto [row-end];
+  grid-template-columns: [first] 20% [second] 1fr [third] 20% [end];
+  grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   font-size: 1rem;
   line-height: 1.4;
+  min-height: 100vh;
 }
 
 .main {
@@ -19,10 +20,9 @@ body {
   grid-row: row2-start / row3-start;
   width: 100%;
   max-width: 100%;
-  padding: 1rem 10%;
+  padding: 1rem 8%;
   margin: 0 auto;
   background-color: $main-background-color;
-  box-sizing: border-box;
 
   a {
     color: #06c;
@@ -56,12 +56,17 @@ body {
   border-radius: 4px;
 }
 
+.fab,
+.fas {
+  padding: 2px;
+}
+
 @media (max-width: 600px) {
   body {
     max-width: 100vw;
     overflow-x: hidden;
     grid-template-columns: [first] 0% [second] 1fr [third] 0% [end];
-    grid-template-rows: [row1-start] 25% [row2-start] auto [row3-start] auto [row-end];
+    grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
   }
 
   .main {
@@ -77,6 +82,15 @@ body {
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
+  }
+
+  .about-page img {
+    float: none;
+    margin: 1rem auto;
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 80%;
+    display: block;
   }
 
   .about-layout {

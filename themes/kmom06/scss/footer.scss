@@ -6,12 +6,10 @@
   display: grid;
   grid-template-columns: [first] auto [second] auto [third] auto [end];
   grid-template-rows: [row1-start] auto [row-end];
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem 1rem;
   background-color: $footer-background;
   color: $footer-text-color;
   align-items: center;
-  padding: 1rem;
 }
 
 .footer-text {
@@ -50,10 +48,8 @@
     width: 100%;
     max-width: 90%;
     flex-direction: row;
-    padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
 
     .social a {
       text-decoration: none;
