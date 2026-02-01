@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 html,
 body {
@@ -67,6 +67,7 @@ body {
     overflow-x: hidden;
     grid-template-columns: [first] 0% [second] 1fr [third] 0% [end];
     grid-template-rows: [row1-start] auto [row2-start] 1fr [row3-start] auto [row-end];
+    min-height: auto;
   }
 
   .main {
